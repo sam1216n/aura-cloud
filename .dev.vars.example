@@ -1,0 +1,2 @@
+# Opcional apenas para desenvolvimento local. Nao versione segredos.
+GEMINI_API_KEY="COLOQUE_SUA_CHAVE_SOMENTE_NO_SEU_COMPUTADOR"

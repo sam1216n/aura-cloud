@@ -1,0 +1,21 @@
+{
+  "name": "aura-cloud",
+  "version": "5.1.1",
+  "private": true,
+  "type": "module",
+  "description": "AURA 5.1.1 — public version for GitHub, private Cloudflare credentials, D1 isolation, Gemini/FLUX and project ZIP.",
+  "scripts": {
+    "dev": "wrangler dev --local",
+    "deploy": "wrangler deploy",
+    "db:local": "wrangler d1 execute aura-cloud-db --local --file=./schema.sql",
+    "db:remote": "wrangler d1 execute aura-cloud-db --remote --file=./schema.sql",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check src/auth.js && node --check src/index.js && node --check scripts/verificar_gemini.mjs && node --check public/app.js && node --check public/zip.js && node --check public/preview.js && node --check scripts/configurar_d1_ci.mjs && node --check scripts/validar_segredos_ci.mjs && npm test"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

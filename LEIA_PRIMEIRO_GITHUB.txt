@@ -1,0 +1,11 @@
+AURA 5.1.1 - VERSAO PARA O GITHUB
+
+1. Extraia o ZIP e publique os ARQUIVOS da pasta AURA_5_1_1_GITHUB no seu repositorio.
+2. Leia GUIA_GITHUB.md para configuracao e publicacao na Cloudflare.
+3. NAO publique chaves Gemini, tokens Cloudflare nem .dev.vars.
+4. Apenas subir o codigo ao GitHub nao coloca o Worker no ar.
+5. Para publicar rapidamente, execute DEPLOY_WINDOWS.bat dentro da pasta extraida.
+6. Para publicar pelo GitHub, configure os tres secrets indicados no guia e use Actions > AURA | Publicar Cloudflare.
+7. NAO exclua o Worker ou o banco D1 existente: os logins dependem do segredo AURA_PASSWORD_PEPPER original.
+
+Esta versao contem o codigo completo da AURA 5.1.1, incluindo a geracao de imagens, arquivos ZIP, preview HTML e isolamento entre contas.

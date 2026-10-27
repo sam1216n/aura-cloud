@@ -1,0 +1,29 @@
+AURA 5.1.1 — VISUAL PREMIUM
+==========================
+
+INSTALACAO / ATUALIZACAO NO WINDOWS:
+
+1. Extraia TODO o conteudo do ZIP em uma pasta.
+2. Execute DEPLOY_WINDOWS.bat.
+3. O instalador reutiliza aura-cloud-db no Cloudflare D1.
+4. Nao apague o banco D1 ou o Worker atual.
+5. Quando solicitado, informe uma chave GEMINI_API_KEY valida.
+6. Ao concluir, abra https://aura-cloud.aura-samuel.workers.dev
+
+NOVOS RECURSOS:
+- Abrir imagens ampliadas dentro do AURA, com bordas arredondadas.
+- Baixar imagens convertidas em PNG ou JPG.
+- Copiar codigo e respostas com um clique.
+- Previa de projetos HTML em ambiente isolado, alem de ZIP e arquivos individuais.
+- Indicador visual estimado de geracao de imagens e arquivos.
+
+LIMITACOES:
+- O percentual exibido durante geracao e ESTIMADO (nao real).
+- Previa HTML suporta HTML, CSS e JS locais simples; bibliotecas externas sao bloqueadas.
+- Imagens em outro dispositivo so aparecem se o armazenamento R2 estiver disponivel.
+- Testes locais nao substituem validar o deploy com Cloudflare e Gemini reais.
+
+SEGURANCA:
+- Cada usuario acessa apenas suas proprias conversas, imagens e arquivos.
+- Nunca compartilhe chaves de API ou segredos de senha.
+- Chaves Gemini sao solicitadas pelo instalador, nao gravadas no codigo publico.
